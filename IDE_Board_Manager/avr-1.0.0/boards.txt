@@ -92,30 +92,6 @@ lite.name=MalDuino Lite
 
 lite.vid.0=0x2341
 lite.pid.0=0x0037
-lite.vid.1=0x2341
-lite.pid.1=0x8037
-lite.vid.2=0x2A03
-lite.pid.2=0x0037
-lite.vid.3=0x2A03
-lite.pid.3=0x8037
-
-lite.vid.4=0x2341
-lite.pid.4=0x0237
-# If the board is a 2341:0237 use 2341:8237 for build and set
-# other parameters as well
-lite.vid.4.build.vid=0x2341
-lite.vid.4.build.pid=0x8237
-lite.vid.4.build.usb_product="Malduino Lite"
-lite.vid.4.bootloader.file=caterina/Caterina-Genuino-Micro.hex
-
-lite.vid.5=0x2341
-lite.pid.5=0x8237
-# If the board is a 2341:8237 use 2341:8237 for build and set
-# other paramters as well
-lite.vid.5.build.vid=0x2341
-lite.vid.5.build.pid=0x8237
-lite.vid.5.build.usb_product="Malduino Lite"
-lite.vid.5.bootloader.file=caterina/Caterina-Genuino-Micro.hex
 
 lite.upload.tool=avrdude
 lite.upload.protocol=avr109
@@ -140,6 +116,6 @@ lite.build.vid=0x2341
 lite.build.pid=0x8037
 lite.build.usb_product="Malduino Lite"
 lite.build.board=AVR_MICRO
-lite.build.core=arduino
+lite.build.core=arduino:arduino
 lite.build.variant=lite
 lite.build.extra_flags={build.usb_flags}
