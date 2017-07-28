@@ -17,14 +17,15 @@
           "category": "Contributed",
           "url": "https://raw.githubusercontent.com/jLynx/MalDuino_Boards/master/IDE_Board_Manager/malduinoboards.1.0.0.zip",
           "archiveFileName": "malduinoboards.1.0.0.zip",
-          "checksum": "SHA-1:CD0BAF8367BD766D2B5EC30B469ED40B3D0DD0E7",
-          "size": "110748",
+          "checksum": "SHA-1:0ACF9CB415AC4EAF935AB85D5410022695FF6CAC",
+          "size": "129286",
           "help": {
             "online": "https://malduino.com/wiki/doku.php"
           },
           "boards": [
             {
-              "name": "MalDuino Elite"
+              "name": "MalDuino Elite",
+              "name": "MalDuino Lite"
             }
           ],
           "toolsDependencies": []
