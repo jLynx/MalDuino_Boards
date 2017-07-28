@@ -13,7 +13,7 @@ CatalogFile=%MFGFILENAME%.cat
 DriverVer=04/22/2016 ; Must be most recent date of any file in driver package
 
 [Manufacturer]
-%MFGNAME%=SparkFunDevices, NTamd64, NTia64
+%MFGNAME%=MalDuinoDevices, NTamd64, NTia64
 
 [DestinationDirs]
 FakeModemCopyFileSection=12
@@ -47,21 +47,24 @@ LoadOrderGroup=Base
 ;------------------------------------------------------------------------------
 ;  Vendor and Product ID Definitions
 ;------------------------------------------------------------------------------
-[SparkFunDevices]
+[MalDuinoDevices]
 ; 3.3V/8MHz
 %Pro.Micro.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9203
 %Pro.Micro.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9204&MI_00
+%Pro.Micro.apple.name%=DriverInstall, USB\VID_05AC&PID_024F&MI_00
 
 
-[SparkFunDevices.NTamd64]
+[MalDuinoDevices.NTamd64]
 ; 3.3V/8MHz
 %Pro.Micro.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9203
 %Pro.Micro.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9204&MI_00
+%Pro.Micro.apple.name%=DriverInstall, USB\VID_05AC&PID_024F&MI_00
 
-[SparkFunDevices.NTia64]
+[MalDuinoDevices.NTia64]
 ; 3.3V/8MHz
 %Pro.Micro.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9203
 %Pro.Micro.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9204&MI_00
+%Pro.Micro.apple.name%=DriverInstall, USB\VID_05AC&PID_024F&MI_00
 
 ;------------------------------------------------------------------------------
 ;  String Definitions
@@ -75,3 +78,4 @@ MFGNAME="MalDuino"
 leonardo.sketch.name="Arduino Leonardo"
 Pro.Micro.bootloader.name="MalDuino Pro Micro bootloader"
 Pro.Micro.sketch.name="MalDuino Elite"
+Pro.Micro.apple.name="MalDuino Elite - Apple"

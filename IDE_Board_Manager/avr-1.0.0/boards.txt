@@ -33,10 +33,49 @@ malelite.build.core=arduino:arduino
 malelite.build.variant=malelite
 malelite.build.mcu=atmega32u4
 malelite.build.usb_product="MalDuino Elite"
-malelite.build.vid=0x05ac
+malelite.build.vid=0x1B4F
 malelite.build.extra_flags={build.usb_flags}
 
 ######################### MalDuino Elite 3.3V / 8MHz ################################
+malelite=ATmega32U4 (3.3V, 8 MHz)
+
+malelite.build.pid.0=0x9203
+malelite.build.pid.1=0x9204
+malelite.build.pid=0x9204
+malelite.build.f_cpu=8000000L
+
+malelite.bootloader.extended_fuses=0xFE
+malelite.bootloader.file=caterina/Caterina-promicro8.hex
+
+################################################################################
+################################## MalDuino Elite - Apple ###################################
+################################################################################
+malelite.name=MalDuino Elite - Apple
+
+malelite.upload.tool=avrdude
+malelite.upload.protocol=avr109
+malelite.upload.maximum_size=28672
+malelite.upload.maximum_data_size=2560
+malelite.upload.speed=57600
+malelite.upload.disable_flushing=true
+malelite.upload.use_1200bps_touch=true
+malelite.upload.wait_for_upload_port=true
+
+malelite.bootloader.tool=avrdude
+malelite.bootloader.unlock_bits=0x3F
+malelite.bootloader.lock_bits=0x2F
+malelite.bootloader.low_fuses=0xFF
+malelite.bootloader.high_fuses=0xD8
+
+malelite.build.board=AVR_PROMICRO
+malelite.build.core=arduino:arduino
+malelite.build.variant=malelite
+malelite.build.mcu=atmega32u4
+malelite.build.usb_product="MalDuino Elite - Apple"
+malelite.build.vid=0x05ac
+malelite.build.extra_flags={build.usb_flags}
+
+######################### MalDuino Elite - Apple 3.3V / 8MHz ################################
 malelite=ATmega32U4 (3.3V, 8 MHz)
 
 malelite.build.pid.0=0x9203
