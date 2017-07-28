@@ -24,7 +24,9 @@
           },
           "boards": [
             {
-              "name": "MalDuino Elite",
+              "name": "MalDuino Elite"
+            },
+            {
               "name": "MalDuino Lite"
             }
           ],
