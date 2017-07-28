@@ -48,15 +48,12 @@
 
 # USB vendor ID (VID)
 # official Arduino LLC VID = 0x2341
-# SparkFun VID = 0x1B4F
+# MalDuino VID = 0x1B4F
 VID = 0x1B4F
 
 # USB product ID (PID)
 # official Leonardo PID = 0x0036
-# SparkFun WiFlyin' PID = 0x9209
-# SparkFun LilyPadUSB PID = 0x9207
-# SparkFun Pro Micro 5V PID = 0x9205
-# "                " 3.3V PID = 0x9203
+# MalDuino Pro Micro 3.3V PID = 0x9203
 # MaKey MaKey PID = 0x2B74
 PID = 0x9205
 

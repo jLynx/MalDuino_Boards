@@ -13,7 +13,7 @@ CatalogFile=%MFGFILENAME%.cat
 DriverVer=04/22/2016 ; Must be most recent date of any file in driver package
 
 [Manufacturer]
-%MFGNAME%=MalDuino, NTamd64, NTia64
+%MFGNAME%=SparkFunDevices, NTamd64, NTia64
 
 [DestinationDirs]
 FakeModemCopyFileSection=12
@@ -47,31 +47,31 @@ LoadOrderGroup=Base
 ;------------------------------------------------------------------------------
 ;  Vendor and Product ID Definitions
 ;------------------------------------------------------------------------------
-[MalDuino]
+[SparkFunDevices]
 ; 3.3V/8MHz
 %Pro.Micro.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9203
-%Pro.Micro.sketch.name%=DriverInstall, USB\VID_05AC&PID_024F&MI_00
+%Pro.Micro.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9204&MI_00
 
 
-[MalDuino.NTamd64]
+[SparkFunDevices.NTamd64]
 ; 3.3V/8MHz
 %Pro.Micro.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9203
-%Pro.Micro.sketch.name%=DriverInstall, USB\VID_05AC&PID_024F&MI_00
+%Pro.Micro.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9204&MI_00
 
-[MalDuino.NTia64]
+[SparkFunDevices.NTia64]
 ; 3.3V/8MHz
 %Pro.Micro.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9203
-%Pro.Micro.sketch.name%=DriverInstall, USB\VID_05AC&PID_024F&MI_00
+%Pro.Micro.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9204&MI_00
 
 ;------------------------------------------------------------------------------
 ;  String Definitions
 ;------------------------------------------------------------------------------
 [Strings]
-MFGFILENAME="MalDuino"
+MFGFILENAME="malduino"
 DriverPackageDisplayName="MalDuino AVR USB Driver"
 ServiceName="USB RS-232 Emulation Driver"
 DRIVERFILENAME ="usbser"
 MFGNAME="MalDuino"
 leonardo.sketch.name="Arduino Leonardo"
-Pro.Micro.bootloader.name="MalDuino Elite bootloader"
+Pro.Micro.bootloader.name="MalDuino Pro Micro bootloader"
 Pro.Micro.sketch.name="MalDuino Elite"

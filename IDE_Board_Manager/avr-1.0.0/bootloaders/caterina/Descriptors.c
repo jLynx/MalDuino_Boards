@@ -213,7 +213,7 @@ const USB_Descriptor_String_t ManufNameString =
 	.Header					= {.Size = USB_STRING_LEN(20), .Type = DTYPE_String},
 	
 	#if DEVICE_VID == 0x1B4F
-	.UnicodeString			= L"SparkFun Electronics"
+	.UnicodeString			= L"MalDuino"
 	#else
 	.UnicodeString			= L"Unknown             "
 	#endif

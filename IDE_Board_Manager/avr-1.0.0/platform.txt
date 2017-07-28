@@ -4,7 +4,7 @@
 # * https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 # * https://github.com/arduino/Arduino/wiki/Arduino-Hardware-Cores-migration-guide-from-1.0-to-1.6
 #
-name=SparkFun Boards
+name=MalDuino Boards
 version=1.1.0
 
 # AVR Uploader/Programmers tools
