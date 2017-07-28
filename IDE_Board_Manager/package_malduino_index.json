@@ -1,8 +1,8 @@
 {
   "packages": [
     {
-      "name": "Malduino",
-      "maintainer": "Malduino",
+      "name": "MalDuino",
+      "maintainer": "MalDuino",
       "websiteURL": "https://malduino.com/",
       "email": "jhonti@malduino.com",
       "help": {
@@ -11,7 +11,7 @@
       "platforms": [
         
         {
-          "name": "Malduino Bad USB Boards",
+          "name": "MalDuino Bad USB Boards",
           "architecture": "avr",
           "version": "1.0.0",
           "category": "Contributed",
@@ -24,7 +24,7 @@
           },
           "boards": [
             {
-              "name": "Malduino Elite"
+              "name": "MalDuino Elite"
             }
           ],
           "toolsDependencies": []
