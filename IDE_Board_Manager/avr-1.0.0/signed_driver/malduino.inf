@@ -1,0 +1,77 @@
+;************************************************************
+; Windows USB CDC ACM Setup File
+; Copyright (c) 2000 Microsoft Corporation
+
+
+[Version]
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Signature="$Windows NT$"
+Provider=%MFGNAME%
+DriverPackageDisplayName=%DriverPackageDisplayName%
+CatalogFile=%MFGFILENAME%.cat
+DriverVer=04/22/2016 ; Must be most recent date of any file in driver package
+
+[Manufacturer]
+%MFGNAME%=MalDuino, NTamd64, NTia64
+
+[DestinationDirs]
+FakeModemCopyFileSection=12
+DefaultDestDir=12 ; dirid = \Drivers on WinNT platforms
+
+[DefaultInstall]
+CopyINF=malduino.inf
+
+[DriverInstall]
+include=mdmcpq.inf,usb.inf
+CopyFiles=FakeModemCopyFileSection
+AddReg=MalDuino.AddReg
+
+[MalDuino.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,%DRIVERFILENAME%.sys
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[DriverInstall.Services]
+include=mdmcpq.inf
+AddService=%DRIVERFILENAME%, 0x00000002, DriverService
+
+[DriverService]
+DisplayName=%ServiceName%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\%DRIVERFILENAME%.sys
+LoadOrderGroup=Base
+
+;------------------------------------------------------------------------------
+;  Vendor and Product ID Definitions
+;------------------------------------------------------------------------------
+[MalDuino]
+; 3.3V/8MHz
+%Pro.Micro.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9203
+%Pro.Micro.sketch.name%=DriverInstall, USB\VID_05AC&PID_024F&MI_00
+
+
+[MalDuino.NTamd64]
+; 3.3V/8MHz
+%Pro.Micro.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9203
+%Pro.Micro.sketch.name%=DriverInstall, USB\VID_05AC&PID_024F&MI_00
+
+[MalDuino.NTia64]
+; 3.3V/8MHz
+%Pro.Micro.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9203
+%Pro.Micro.sketch.name%=DriverInstall, USB\VID_05AC&PID_024F&MI_00
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+[Strings]
+MFGFILENAME="MalDuino"
+DriverPackageDisplayName="MalDuino AVR USB Driver"
+ServiceName="USB RS-232 Emulation Driver"
+DRIVERFILENAME ="usbser"
+MFGNAME="MalDuino"
+leonardo.sketch.name="Arduino Leonardo"
+Pro.Micro.bootloader.name="MalDuino Elite bootloader"
+Pro.Micro.sketch.name="MalDuino Elite"

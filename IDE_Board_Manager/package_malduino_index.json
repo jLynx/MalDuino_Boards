@@ -15,10 +15,10 @@
           "architecture": "avr",
           "version": "1.0.0",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/IDE_Board_Manager/sparkfunboards.1.1.6.tar.bz2",
-          "archiveFileName": "sparkfunboards.1.1.6.tar.bz2",
-          "checksum": "SHA-1:455F3C01915C7BED7A3AFEF823AEBBB69FA7A2B8",
-          "size": "1159276",
+          "url": "https://raw.githubusercontent.com/jLynx/MalDuino_Boards/master/IDE_Board_Manager/malduinoboards.1.0.0.zip",
+          "archiveFileName": "malduinoboards.1.0.0.zip",
+          "checksum": "SHA-1:1229C76B2C7EC510259A07C85C4FA99AF5B7E02B",
+          "size": "(111859",
           "help": {
             "online": "https://malduino.com/wiki/doku.php"
           },
